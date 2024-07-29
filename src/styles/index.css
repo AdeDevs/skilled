@@ -1,2 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Young+Serif&display=swap');
+
+*{
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.home-box {
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav h1 {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+header nav button {
+    background-color: #13193f;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: 300ms;
+}
+
+header nav button:hover {
+    background-color: rgba(19, 25, 63, 0.706);
+}
+
+.landing {
+    display: flex;
+    margin-top: 9vh;
+    justify-content: space-between;
+}
+
+.landing div {
+    width: 550px;
+    margin: 20px 0;
+}
+
+.landing div h1 {
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.landing div p {
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.landing div button {
+    background-image: linear-gradient(rgb(239, 103, 77), rgb(237, 77, 133));
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    padding: 15px 25px;
+    font-size: 15px;
+    transition: 300ms;
+    margin-top: 20px;
+}
+
+.landing div button:hover {
+    background-image: linear-gradient(rgba(239, 104, 77, 0.801), rgba(237, 77, 133, 0.799));
+}
+
+
+@media screen and (max-width:500px) and (min-width:100px) {
+    .home-box {
+        padding: 0 10px;
+    }
+    .landing {
+        display: block;
+        margin-top: 3vh;
+    }
+    .landing div {
+        width: 100%;
+    }
+    .landing div h1 {
+        font-size: 40px;
+    }
+    .landing div p {
+        width: 99%;
+        font-size: 17px;
+        color: #515151;
+        font-weight: 300;
+    }
+}
