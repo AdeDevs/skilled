@@ -9,8 +9,8 @@ button {
     cursor: pointer;
 }
 
-.home-box {
-    padding: 0 80px;
+.main-box {
+    padding: 0 90px;
     box-sizing: border-box;
 }
 
@@ -87,9 +87,130 @@ header nav button:hover {
     background-image: linear-gradient(rgba(239, 104, 77, 0.801), rgba(237, 77, 133, 0.799));
 }
 
+main section {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-@media screen and (max-width:500px) and (min-width:100px) {
-    .home-box {
+main section div {
+    width: 270px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgb(210, 210, 210);
+    border-radius: 10px;
+    margin: 40px 20px;
+    height: 230px;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    transition: 300ms;
+}
+
+main section div:hover {
+    background-color:  rgb(237, 77, 133);
+    color: #fff;
+    cursor: pointer;
+}
+
+main section div:hover a {
+    color: rgba(19, 25, 63, 0.706);
+    border-bottom: 2px solid rgba(19, 25, 63, 0.706);
+}
+
+main section div:hover p {
+    color: #d3d3d3;
+}
+
+main section div:nth-child(1) {
+    background-image: linear-gradient(rgb(239, 103, 77), rgb(237, 77, 133));
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+main section div h1 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+main section div p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #515151;
+    font-family: "Montserrat", sans-serif;
+    margin: 20px 0;
+}
+
+main section div a {
+    position: absolute;
+    bottom: 0;
+    margin: 20px 0;
+    color: rgb(237, 77, 133);
+    font-size: 15px;
+    transition: 300ms;
+    font-family: "Poppins", sans-serif;
+}
+
+footer {
+    background-color: #13193f;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer nav h1 {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer nav button {
+    background-image: linear-gradient(rgb(239, 103, 77), rgb(237, 77, 133));
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: 300ms;
+}
+
+footer nav button:hover {
+    background-color: rgba(19, 25, 63, 0.706);
+}
+
+@media screen and (max-width: 1024px) and (min-width:550px) {
+    .main-box {
+        padding: 0 70px;
+    }
+    footer nav {
+        padding: 20px 80px;
+    }
+    main section div {
+        width: 47%;
+        margin: 40px 10px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    main section div {
+        width: 300px;
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width:540px) and (min-width:100px) {
+    .main-box {
         padding: 0 10px;
     }
     .landing {
@@ -107,5 +228,18 @@ header nav button:hover {
         font-size: 17px;
         color: #515151;
         font-weight: 300;
+    }
+    main section div {
+        margin: 10px auto;
+        width: 100%;
+    }
+    footer nav {
+        padding: 20px 10px;
+    }
+    footer nav h1 {
+        font-size: 23px;
+    }
+    footer nav button {
+        font-size: 14px;
     }
 }
