@@ -1,3 +1,10 @@
+import bag from "../assets/bag.png"
+import blockchain from "../assets/blockchain.png"
+import camera from "../assets/camera.png"
+import dress from "../assets/dress.png"
+import games from "../assets/games.png"
+import run from "../assets/running.png"
+
 function HomeScreen() {
   return (
     <div className="home">
@@ -27,7 +34,8 @@ function HomeScreen() {
               </h1>
             </div>
             <div>
-              {/* <img src="" /> */}
+              
+              <img src={run} />
               <h1>Animation</h1>
               <p>
                 Learn the latest animation techniques to create stunning motion
@@ -45,7 +53,7 @@ function HomeScreen() {
               <a href="#">Get Started</a>
             </div>
             <div>
-              {/* <img src={} /> */}
+              <img src={camera} />
               <h1>Photography</h1>
               <p>
                 Explore critical fundamentals like lighting, composition, and
@@ -54,7 +62,7 @@ function HomeScreen() {
               <a href="#">Get Started</a>
             </div>
             <div>
-              {/* <img src={} /> */}
+              <img src={blockchain} />
               <h1>Crypto</h1>
               <p>
                 All you need to know to get started investing in crypto. Go from
@@ -63,7 +71,7 @@ function HomeScreen() {
               <a href="#">Get Started</a>
             </div>
             <div>
-              {/* <img src={} /> */}
+              <img src={games} />
               <h1>Gaming</h1>
               <p>
                 A step-by-step playbook to help you start, scale and sustain
@@ -72,7 +80,7 @@ function HomeScreen() {
               <a href="#">Get Started</a>
             </div>
             <div>
-              {/* <img src={} /> */}
+              <img src={dress} />
               <h1>Fashion</h1>
               <p>
                 All you need to know to get started with your journey in
@@ -81,7 +89,7 @@ function HomeScreen() {
               <a href="#">Get Started</a>
             </div>
             <div>
-              {/* <img src={} /> */}
+              <img src={bag} />
               <h1>Business</h1>
               <p>
                 A step-by-step playbook to help you start, scale and sustain

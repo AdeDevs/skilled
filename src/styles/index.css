@@ -96,7 +96,6 @@ main section {
 
 main section div {
     width: 270px;
-    background-color: rgb(255, 255, 255);
     box-shadow: 10px 10px 10px rgb(210, 210, 210);
     border-radius: 10px;
     margin: 40px 20px;
@@ -105,6 +104,17 @@ main section div {
     padding: 20px;
     position: relative;
     transition: 300ms;
+}
+
+main section div img {
+    position: absolute;
+    top: -23px;
+    background-image: linear-gradient(rgb(239, 103, 77), rgb(237, 77, 133));
+    border-radius: 50px;
+    align-items: center;
+    padding: 10px;
+    width: 45px;
+    box-sizing: border-box;
 }
 
 main section div:hover {
@@ -230,7 +240,7 @@ footer nav button:hover {
         font-weight: 300;
     }
     main section div {
-        margin: 10px auto;
+        margin: 20px auto;
         width: 100%;
     }
     footer nav {
